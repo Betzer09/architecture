@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYT-a9-w9A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokeman-->
+        <scene sceneID="dq1-ez-wfN">
+            <objects>
+                <viewController id="ctR-zp-W1v" customClass="PokemanOverviewCollectionViewController" customModule="StridesiOSInterview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6Y-CW-6pl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M56-Cf-16S">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5Ht-ru-F27">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2.5" minY="10" maxX="2.5" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="okX-sI-Fta">
+                                        <rect key="frame" x="2.5" y="10" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lYT-2g-qiP">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ctR-zp-W1v" id="oUz-3t-Zbu"/>
+                                    <outlet property="delegate" destination="ctR-zp-W1v" id="Ltd-af-VXQ"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="29d-41-UxO"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="29d-41-UxO" firstAttribute="bottom" secondItem="M56-Cf-16S" secondAttribute="bottom" id="3lb-65-Egq"/>
+                            <constraint firstItem="M56-Cf-16S" firstAttribute="leading" secondItem="29d-41-UxO" secondAttribute="leading" id="E86-Tb-S6F"/>
+                            <constraint firstItem="M56-Cf-16S" firstAttribute="top" secondItem="29d-41-UxO" secondAttribute="top" id="GPM-tV-0S5"/>
+                            <constraint firstItem="29d-41-UxO" firstAttribute="trailing" secondItem="M56-Cf-16S" secondAttribute="trailing" id="YqJ-Xa-WUY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pokeman" id="dR0-aU-MVH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pokemanCollectionView" destination="M56-Cf-16S" id="lBb-eV-YSA"/>
+                        <segue destination="3LP-QT-gCf" kind="show" identifier="toDetails" id="7L7-yj-wIc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1el-rE-BaL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="136.60714285714286"/>
+        </scene>
+        <!--PokemanDetails-->
+        <scene sceneID="cD6-gf-W37">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PokemanDetails" id="3LP-QT-gCf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Khp-Np-Iw8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsQ-v6-wCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1571" y="137"/>
+        </scene>
+        <!--POKEMAN-->
+        <scene sceneID="hOi-9a-aR7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tYT-a9-w9A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="POKEMAN" image="tab-pokeball" id="HVn-lJ-5fU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GAh-1U-b7N">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ctR-zp-W1v" kind="relationship" relationship="rootViewController" id="tCF-Hb-qUo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDW-8a-JXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab-pokeball" width="30" height="30"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aKo-aY-6TQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lapsus-pro.bold.otf">
+            <string>LapsusPro-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pokeman Details-->
+        <scene sceneID="221-Ng-FGa">
+            <objects>
+                <viewController id="aKo-aY-6TQ" customClass="PokemanDetailsViewController" customModule="StridesiOSInterview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nGi-R7-wYu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_gradient" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-et-bmp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="98S-kx-xlN" customClass="CachedImageView" customModule="StridesiOSInterview" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4FS-T6-h5D"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="wsd-Up-shr">
+                                <rect key="frame" x="12" y="288" width="390" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Pikachu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-dX-2gH">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="19"/>
+                                        <fontDescription key="fontDescription" name="LapsusPro-Bold" family="Lapsus Pro" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight: 52pds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aux-hg-60o" userLabel="Weight: 52">
+                                        <rect key="frame" x="0.0" y="25" width="390" height="19"/>
+                                        <fontDescription key="fontDescription" name="LapsusPro-Bold" family="Lapsus Pro" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience: 25xp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnZ-Uw-PUV" userLabel="Weight: 52">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="19"/>
+                                        <fontDescription key="fontDescription" name="LapsusPro-Bold" family="Lapsus Pro" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yz-fx-GkB">
+                                <rect key="frame" x="12" y="412.5" width="390" height="437.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="moveCell" textLabel="WRH-BZ-Kod" detailTextLabel="Uvb-Yn-9M8" rowHeight="67" style="IBUITableViewCellStyleValue1" id="kvN-YV-7mf" customClass="moveCell">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kvN-YV-7mf" id="dcZ-cx-h1I">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WRH-BZ-Kod">
+                                                    <rect key="frame" x="20" y="24" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uvb-Yn-9M8">
+                                                    <rect key="frame" x="326" y="24" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="vCornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aKo-aY-6TQ" id="KGd-OK-ZOh"/>
+                                    <outlet property="delegate" destination="aKo-aY-6TQ" id="3Q1-NR-b7h"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Moves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx4-8p-sJG" userLabel="Weight: 52">
+                                <rect key="frame" x="12" y="381" width="390" height="31.5"/>
+                                <fontDescription key="fontDescription" name="LapsusPro-Bold" family="Lapsus Pro" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zWQ-uy-NRh"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="98S-kx-xlN" firstAttribute="leading" secondItem="zWQ-uy-NRh" secondAttribute="leading" id="146-6O-crs"/>
+                            <constraint firstItem="wsd-Up-shr" firstAttribute="leading" secondItem="zWQ-uy-NRh" secondAttribute="leading" constant="12" id="7RB-2P-WzV"/>
+                            <constraint firstItem="98S-kx-xlN" firstAttribute="top" secondItem="zWQ-uy-NRh" secondAttribute="top" id="Bb2-SL-BLb"/>
+                            <constraint firstItem="wsd-Up-shr" firstAttribute="top" secondItem="98S-kx-xlN" secondAttribute="bottom" id="KOQ-EJ-QSd"/>
+                            <constraint firstItem="zWQ-uy-NRh" firstAttribute="trailing" secondItem="wsd-Up-shr" secondAttribute="trailing" constant="12" id="NGJ-XZ-FIY"/>
+                            <constraint firstItem="9yz-fx-GkB" firstAttribute="top" secondItem="lx4-8p-sJG" secondAttribute="bottom" id="QKM-eN-9WU"/>
+                            <constraint firstItem="lx4-8p-sJG" firstAttribute="top" secondItem="wsd-Up-shr" secondAttribute="bottom" constant="24" id="Rlw-9P-u7O"/>
+                            <constraint firstItem="9yz-fx-GkB" firstAttribute="leading" secondItem="zWQ-uy-NRh" secondAttribute="leading" constant="12" id="SKx-Cl-xmz"/>
+                            <constraint firstItem="zWQ-uy-NRh" firstAttribute="trailing" secondItem="9yz-fx-GkB" secondAttribute="trailing" constant="12" id="Yfv-GM-MAG"/>
+                            <constraint firstItem="zWQ-uy-NRh" firstAttribute="bottom" secondItem="9yz-fx-GkB" secondAttribute="bottom" constant="12" id="bNw-gM-o6F"/>
+                            <constraint firstItem="UXZ-et-bmp" firstAttribute="top" secondItem="98S-kx-xlN" secondAttribute="top" id="c8C-g5-AFm"/>
+                            <constraint firstItem="zWQ-uy-NRh" firstAttribute="trailing" secondItem="lx4-8p-sJG" secondAttribute="trailing" constant="12" id="f43-Rt-09j"/>
+                            <constraint firstItem="UXZ-et-bmp" firstAttribute="bottom" secondItem="98S-kx-xlN" secondAttribute="bottom" id="hnF-4k-OGk"/>
+                            <constraint firstItem="UXZ-et-bmp" firstAttribute="trailing" secondItem="98S-kx-xlN" secondAttribute="trailing" id="lLT-0U-LlF"/>
+                            <constraint firstItem="UXZ-et-bmp" firstAttribute="leading" secondItem="98S-kx-xlN" secondAttribute="leading" id="syw-4g-k6P"/>
+                            <constraint firstItem="lx4-8p-sJG" firstAttribute="leading" secondItem="nGi-R7-wYu" secondAttribute="leading" constant="12" id="uz7-gv-bzS"/>
+                            <constraint firstItem="zWQ-uy-NRh" firstAttribute="trailing" secondItem="98S-kx-xlN" secondAttribute="trailing" id="y7h-OJ-1c7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pokeman Details" id="p2Y-KO-YLM">
+                        <barButtonItem key="backBarButtonItem" title="  " id="UwW-Wf-I3e"/>
+                        <barButtonItem key="leftBarButtonItem" image="ic_webBack" id="pMd-pm-iAy">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="aKo-aY-6TQ" id="GD0-e5-b0N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="experienceLabel" destination="MnZ-Uw-PUV" id="UBZ-IB-Vrm"/>
+                        <outlet property="nameLabel" destination="t0b-dX-2gH" id="Ts7-8g-2ak"/>
+                        <outlet property="pokemanImageView" destination="98S-kx-xlN" id="kR3-4A-Eo3"/>
+                        <outlet property="weightLabel" destination="Aux-hg-60o" id="Q75-3t-Ayl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zv-Uh-Zh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="219.64285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle_gradient" width="414" height="200"/>
+        <image name="ic_webBack" width="13" height="25"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
