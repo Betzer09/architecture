@@ -13,7 +13,7 @@
 import UIKit
 
 protocol PokemanOverviewBusinessLogic {
-    func doSomething(request: PokemanOverview.Something.Request)
+    func fetchPokemans(request: PokemanOverview.Something.PokemanOverviewRequest)
 //    func doSomethingElse(request: PokemanOverview.SomethingElse.Request)
 }
 
@@ -28,11 +28,11 @@ class PokemanOverviewInteractor: PokemanOverviewBusinessLogic, PokemanOverviewDa
 
     // MARK: Do something (and send response to PokemanOverviewPresenter)
 
-    func doSomething(request: PokemanOverview.Something.Request) {
+    func fetchPokemans(request: PokemanOverview.Something.PokemanOverviewRequest) {
         worker = PokemanOverviewWorker()
-        worker?.doSomeWork()
+        worker?.fetchPokeman()
 
-        let response = PokemanOverview.Something.Response()
+        let response = PokemanOverview.Something.PokemanOverviewResponse()
         presenter?.presentSomething(response: response)
     }
 //

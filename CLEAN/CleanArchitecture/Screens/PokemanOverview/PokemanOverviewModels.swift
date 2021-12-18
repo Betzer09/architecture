@@ -12,20 +12,19 @@
 
 import UIKit
 
-enum PokemanOverview
-{
+enum PokemanOverview {
     // MARK: Use cases
 
     enum Something {
-        struct Request {
+        struct PokemanOverviewRequest {
 
         }
 
-        struct Response {
+        struct PokemanOverviewResponse {
 
         }
 
-        struct ViewModel {
+        struct PokemanOverviewViewModel {
 
         }
     }

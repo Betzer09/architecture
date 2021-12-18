@@ -13,7 +13,7 @@
 import UIKit
 
 protocol PokemanOverviewPresentationLogic {
-    func presentSomething(response: PokemanOverview.Something.Response)
+    func presentSomething(response: PokemanOverview.Something.PokemanOverviewResponse)
 }
 
 class PokemanOverviewPresenter: PokemanOverviewPresentationLogic {
@@ -21,8 +21,8 @@ class PokemanOverviewPresenter: PokemanOverviewPresentationLogic {
 
     // MARK: Parse and calc respnse from PokemanOverviewInteractor and send simple view model to PokemanOverviewViewController to be displayed
 
-    func presentSomething(response: PokemanOverview.Something.Response) {
-        let viewModel = PokemanOverview.Something.ViewModel()
+    func presentSomething(response: PokemanOverview.Something.PokemanOverviewResponse) {
+        let viewModel = PokemanOverview.Something.PokemanOverviewViewModel()
         viewController?.displaySomething(viewModel: viewModel)
     }
 //

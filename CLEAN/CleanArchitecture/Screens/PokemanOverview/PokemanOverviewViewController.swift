@@ -13,7 +13,7 @@
 import UIKit
 
 protocol PokemanOverviewDisplayLogic: AnyObject {
-    func displaySomething(viewModel: PokemanOverview.Something.ViewModel)
+    func displaySomething(viewModel: PokemanOverview.Something.PokemanOverviewViewModel)
 //    func displaySomethingElse(viewModel: PokemanOverview.SomethingElse.ViewModel)
 }
 
@@ -63,7 +63,7 @@ class PokemanOverviewViewController: UIViewController, PokemanOverviewDisplayLog
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+        fetchPokemans()
 //        doSomethingElse()
     }
     
@@ -81,9 +81,9 @@ class PokemanOverviewViewController: UIViewController, PokemanOverviewDisplayLog
     
     // MARK: - request data from PokemanOverviewInteractor
 
-    func doSomething() {
-        let request = PokemanOverview.Something.Request()
-        interactor?.doSomething(request: request)
+    func fetchPokemans() {
+        let request = PokemanOverview.Something.PokemanOverviewRequest()
+        interactor?.fetchPokemans(request: request)
     }
 //
 //    func doSomethingElse() {
@@ -93,7 +93,7 @@ class PokemanOverviewViewController: UIViewController, PokemanOverviewDisplayLog
 
     // MARK: - display view model from PokemanOverviewPresenter
 
-    func displaySomething(viewModel: PokemanOverview.Something.ViewModel) {
+    func displaySomething(viewModel: PokemanOverview.Something.PokemanOverviewViewModel) {
         //nameTextField.text = viewModel.name
     }
 //

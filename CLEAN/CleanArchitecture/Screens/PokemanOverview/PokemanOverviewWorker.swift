@@ -13,11 +13,14 @@
 import UIKit
 
 class PokemanOverviewWorker {
-    func doSomeWork() {
-        
+    
+    func fetchPokeman(completion: @escaping) {
+        APIManager.loadAllPokeman { result in
+            switch result {
+            case .failure(let e):
+                
+            case .success:
+            }
+        }
     }
-//    
-//    func doSomeOtherWork() {
-//
-//    }
 }
