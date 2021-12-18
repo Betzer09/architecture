@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYT-a9-w9A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYT-a9-w9A">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -13,7 +12,7 @@
         <!--Pokeman-->
         <scene sceneID="dq1-ez-wfN">
             <objects>
-                <viewController id="ctR-zp-W1v" customClass="PokemanOverviewCollectionViewController" customModule="StridesiOSInterview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ctR-zp-W1v" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p6Y-CW-6pl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,10 +36,6 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="ctR-zp-W1v" id="oUz-3t-Zbu"/>
-                                    <outlet property="delegate" destination="ctR-zp-W1v" id="Ltd-af-VXQ"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="29d-41-UxO"/>
@@ -55,7 +50,6 @@
                     <navigationItem key="navigationItem" title="Pokeman" id="dR0-aU-MVH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="pokemanCollectionView" destination="M56-Cf-16S" id="lBb-eV-YSA"/>
                         <segue destination="3LP-QT-gCf" kind="show" identifier="toDetails" id="7L7-yj-wIc"/>
                     </connections>
                 </viewController>
