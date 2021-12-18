@@ -10,7 +10,6 @@
 		23C80136276E548B00038BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80135276E548B00038BE3 /* AppDelegate.swift */; };
 		23C80138276E548B00038BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80137276E548B00038BE3 /* SceneDelegate.swift */; };
 		23C8013D276E548B00038BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C8013B276E548B00038BE3 /* Main.storyboard */; };
-		23C8013F276E548C00038BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C8013E276E548C00038BE3 /* Assets.xcassets */; };
 		23C80142276E548C00038BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C80140276E548C00038BE3 /* LaunchScreen.storyboard */; };
 		23C80151276E5F7400038BE3 /* PokemanOverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8014B276E5F7400038BE3 /* PokemanOverviewPresenter.swift */; };
 		23C80152276E5F7400038BE3 /* PokemanOverviewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8014C276E5F7400038BE3 /* PokemanOverviewWorker.swift */; };
@@ -26,6 +25,9 @@
 		23C80167276E622200038BE3 /* PokemanDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80161276E622200038BE3 /* PokemanDetailsModels.swift */; };
 		23C80168276E622200038BE3 /* PokemanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80162276E622200038BE3 /* PokemanDetailsViewController.swift */; };
 		23C80169276E622200038BE3 /* PokemanDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80163276E622200038BE3 /* PokemanDetailsInteractor.swift */; };
+		23C8016B276E62A600038BE3 /* PokemanOverview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C8016A276E62A600038BE3 /* PokemanOverview.storyboard */; };
+		23C8016D276E62C100038BE3 /* PokemanDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C8016C276E62B700038BE3 /* PokemanDetails.storyboard */; };
+		23C8016F276E62F400038BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C8016E276E62F400038BE3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,6 @@
 		23C80135276E548B00038BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C80137276E548B00038BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		23C8013C276E548B00038BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		23C8013E276E548C00038BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C80141276E548C00038BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C80143276E548C00038BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23C8014B276E5F7400038BE3 /* PokemanOverviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanOverviewPresenter.swift; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		23C80161276E622200038BE3 /* PokemanDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsModels.swift; sourceTree = "<group>"; };
 		23C80162276E622200038BE3 /* PokemanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsViewController.swift; sourceTree = "<group>"; };
 		23C80163276E622200038BE3 /* PokemanDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsInteractor.swift; sourceTree = "<group>"; };
+		23C8016A276E62A600038BE3 /* PokemanOverview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PokemanOverview.storyboard; sourceTree = "<group>"; };
+		23C8016C276E62B700038BE3 /* PokemanDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PokemanDetails.storyboard; sourceTree = "<group>"; };
+		23C8016E276E62F400038BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +91,8 @@
 				23C80149276E5D2200038BE3 /* Model */,
 				23C80135276E548B00038BE3 /* AppDelegate.swift */,
 				23C80137276E548B00038BE3 /* SceneDelegate.swift */,
+				23C8016E276E62F400038BE3 /* Assets.xcassets */,
 				23C8013B276E548B00038BE3 /* Main.storyboard */,
-				23C8013E276E548C00038BE3 /* Assets.xcassets */,
 				23C80140276E548C00038BE3 /* LaunchScreen.storyboard */,
 				23C80143276E548C00038BE3 /* Info.plist */,
 			);
@@ -123,6 +127,7 @@
 		23C8015C276E61E600038BE3 /* PokemanOverview */ = {
 			isa = PBXGroup;
 			children = (
+				23C8016A276E62A600038BE3 /* PokemanOverview.storyboard */,
 				23C8014B276E5F7400038BE3 /* PokemanOverviewPresenter.swift */,
 				23C8014C276E5F7400038BE3 /* PokemanOverviewWorker.swift */,
 				23C8014D276E5F7400038BE3 /* PokemanOverviewRouter.swift */,
@@ -142,6 +147,7 @@
 				23C80161276E622200038BE3 /* PokemanDetailsModels.swift */,
 				23C80162276E622200038BE3 /* PokemanDetailsViewController.swift */,
 				23C80163276E622200038BE3 /* PokemanDetailsInteractor.swift */,
+				23C8016C276E62B700038BE3 /* PokemanDetails.storyboard */,
 			);
 			path = PokemonDetails;
 			sourceTree = "<group>";
@@ -205,8 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C80142276E548C00038BE3 /* LaunchScreen.storyboard in Resources */,
-				23C8013F276E548C00038BE3 /* Assets.xcassets in Resources */,
 				23C8013D276E548B00038BE3 /* Main.storyboard in Resources */,
+				23C8016B276E62A600038BE3 /* PokemanOverview.storyboard in Resources */,
+				23C8016D276E62C100038BE3 /* PokemanDetails.storyboard in Resources */,
+				23C8016F276E62F400038BE3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
