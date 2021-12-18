@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		23C80136276E548B00038BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80135276E548B00038BE3 /* AppDelegate.swift */; };
 		23C80138276E548B00038BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80137276E548B00038BE3 /* SceneDelegate.swift */; };
-		23C8013A276E548B00038BE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80139276E548B00038BE3 /* ViewController.swift */; };
 		23C8013D276E548B00038BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C8013B276E548B00038BE3 /* Main.storyboard */; };
 		23C8013F276E548C00038BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C8013E276E548C00038BE3 /* Assets.xcassets */; };
 		23C80142276E548C00038BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C80140276E548C00038BE3 /* LaunchScreen.storyboard */; };
+		23C80151276E5F7400038BE3 /* PokemanOverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8014B276E5F7400038BE3 /* PokemanOverviewPresenter.swift */; };
+		23C80152276E5F7400038BE3 /* PokemanOverviewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8014C276E5F7400038BE3 /* PokemanOverviewWorker.swift */; };
+		23C80153276E5F7400038BE3 /* PokemanOverviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8014D276E5F7400038BE3 /* PokemanOverviewRouter.swift */; };
+		23C80154276E5F7400038BE3 /* PokemanOverviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8014E276E5F7400038BE3 /* PokemanOverviewModels.swift */; };
+		23C80155276E5F7400038BE3 /* PokemanOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8014F276E5F7400038BE3 /* PokemanOverviewViewController.swift */; };
+		23C80156276E5F7400038BE3 /* PokemanOverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80150276E5F7400038BE3 /* PokemanOverviewInteractor.swift */; };
+		23C8015A276E61D100038BE3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80158276E61D100038BE3 /* APIManager.swift */; };
+		23C8015B276E61D100038BE3 /* BackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80159276E61D100038BE3 /* BackendManager.swift */; };
+		23C80164276E622200038BE3 /* PokemanDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8015E276E622200038BE3 /* PokemanDetailsPresenter.swift */; };
+		23C80165276E622200038BE3 /* PokemanDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8015F276E622200038BE3 /* PokemanDetailsWorker.swift */; };
+		23C80166276E622200038BE3 /* PokemanDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80160276E622200038BE3 /* PokemanDetailsRouter.swift */; };
+		23C80167276E622200038BE3 /* PokemanDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80161276E622200038BE3 /* PokemanDetailsModels.swift */; };
+		23C80168276E622200038BE3 /* PokemanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80162276E622200038BE3 /* PokemanDetailsViewController.swift */; };
+		23C80169276E622200038BE3 /* PokemanDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C80163276E622200038BE3 /* PokemanDetailsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23C80132276E548B00038BE3 /* CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C80135276E548B00038BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C80137276E548B00038BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23C80139276E548B00038BE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23C8013C276E548B00038BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23C8013E276E548C00038BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C80141276E548C00038BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C80143276E548C00038BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C8014B276E5F7400038BE3 /* PokemanOverviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanOverviewPresenter.swift; sourceTree = "<group>"; };
+		23C8014C276E5F7400038BE3 /* PokemanOverviewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanOverviewWorker.swift; sourceTree = "<group>"; };
+		23C8014D276E5F7400038BE3 /* PokemanOverviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanOverviewRouter.swift; sourceTree = "<group>"; };
+		23C8014E276E5F7400038BE3 /* PokemanOverviewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanOverviewModels.swift; sourceTree = "<group>"; };
+		23C8014F276E5F7400038BE3 /* PokemanOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanOverviewViewController.swift; sourceTree = "<group>"; };
+		23C80150276E5F7400038BE3 /* PokemanOverviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanOverviewInteractor.swift; sourceTree = "<group>"; };
+		23C80158276E61D100038BE3 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = ../../../MVC/StridesiOSInterview/API/APIManager.swift; sourceTree = "<group>"; };
+		23C80159276E61D100038BE3 /* BackendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackendManager.swift; path = ../../../MVC/StridesiOSInterview/API/BackendManager.swift; sourceTree = "<group>"; };
+		23C8015E276E622200038BE3 /* PokemanDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsPresenter.swift; sourceTree = "<group>"; };
+		23C8015F276E622200038BE3 /* PokemanDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsWorker.swift; sourceTree = "<group>"; };
+		23C80160276E622200038BE3 /* PokemanDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsRouter.swift; sourceTree = "<group>"; };
+		23C80161276E622200038BE3 /* PokemanDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsModels.swift; sourceTree = "<group>"; };
+		23C80162276E622200038BE3 /* PokemanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsViewController.swift; sourceTree = "<group>"; };
+		23C80163276E622200038BE3 /* PokemanDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemanDetailsInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,68 @@
 		23C80134276E548B00038BE3 /* CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				23C80157276E61C700038BE3 /* API */,
+				23C8014A276E5D2700038BE3 /* Screens */,
+				23C80149276E5D2200038BE3 /* Model */,
 				23C80135276E548B00038BE3 /* AppDelegate.swift */,
 				23C80137276E548B00038BE3 /* SceneDelegate.swift */,
-				23C80139276E548B00038BE3 /* ViewController.swift */,
 				23C8013B276E548B00038BE3 /* Main.storyboard */,
 				23C8013E276E548C00038BE3 /* Assets.xcassets */,
 				23C80140276E548C00038BE3 /* LaunchScreen.storyboard */,
 				23C80143276E548C00038BE3 /* Info.plist */,
 			);
 			path = CleanArchitecture;
+			sourceTree = "<group>";
+		};
+		23C80149276E5D2200038BE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23C8014A276E5D2700038BE3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				23C8015D276E620700038BE3 /* PokemonDetails */,
+				23C8015C276E61E600038BE3 /* PokemanOverview */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		23C80157276E61C700038BE3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				23C80158276E61D100038BE3 /* APIManager.swift */,
+				23C80159276E61D100038BE3 /* BackendManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		23C8015C276E61E600038BE3 /* PokemanOverview */ = {
+			isa = PBXGroup;
+			children = (
+				23C8014B276E5F7400038BE3 /* PokemanOverviewPresenter.swift */,
+				23C8014C276E5F7400038BE3 /* PokemanOverviewWorker.swift */,
+				23C8014D276E5F7400038BE3 /* PokemanOverviewRouter.swift */,
+				23C8014E276E5F7400038BE3 /* PokemanOverviewModels.swift */,
+				23C8014F276E5F7400038BE3 /* PokemanOverviewViewController.swift */,
+				23C80150276E5F7400038BE3 /* PokemanOverviewInteractor.swift */,
+			);
+			path = PokemanOverview;
+			sourceTree = "<group>";
+		};
+		23C8015D276E620700038BE3 /* PokemonDetails */ = {
+			isa = PBXGroup;
+			children = (
+				23C8015E276E622200038BE3 /* PokemanDetailsPresenter.swift */,
+				23C8015F276E622200038BE3 /* PokemanDetailsWorker.swift */,
+				23C80160276E622200038BE3 /* PokemanDetailsRouter.swift */,
+				23C80161276E622200038BE3 /* PokemanDetailsModels.swift */,
+				23C80162276E622200038BE3 /* PokemanDetailsViewController.swift */,
+				23C80163276E622200038BE3 /* PokemanDetailsInteractor.swift */,
+			);
+			path = PokemonDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +217,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C8013A276E548B00038BE3 /* ViewController.swift in Sources */,
+				23C80167276E622200038BE3 /* PokemanDetailsModels.swift in Sources */,
+				23C80154276E5F7400038BE3 /* PokemanOverviewModels.swift in Sources */,
+				23C80155276E5F7400038BE3 /* PokemanOverviewViewController.swift in Sources */,
 				23C80136276E548B00038BE3 /* AppDelegate.swift in Sources */,
+				23C8015A276E61D100038BE3 /* APIManager.swift in Sources */,
+				23C80169276E622200038BE3 /* PokemanDetailsInteractor.swift in Sources */,
+				23C80151276E5F7400038BE3 /* PokemanOverviewPresenter.swift in Sources */,
+				23C80166276E622200038BE3 /* PokemanDetailsRouter.swift in Sources */,
+				23C80152276E5F7400038BE3 /* PokemanOverviewWorker.swift in Sources */,
+				23C8015B276E61D100038BE3 /* BackendManager.swift in Sources */,
+				23C80164276E622200038BE3 /* PokemanDetailsPresenter.swift in Sources */,
+				23C80165276E622200038BE3 /* PokemanDetailsWorker.swift in Sources */,
+				23C80153276E5F7400038BE3 /* PokemanOverviewRouter.swift in Sources */,
 				23C80138276E548B00038BE3 /* SceneDelegate.swift in Sources */,
+				23C80168276E622200038BE3 /* PokemanDetailsViewController.swift in Sources */,
+				23C80156276E5F7400038BE3 /* PokemanOverviewInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
